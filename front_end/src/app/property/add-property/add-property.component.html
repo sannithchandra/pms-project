@@ -1,0 +1,99 @@
+<div class="box-body mt-5">
+	<form novalidate #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
+		<div class="row">
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>Property Name</label>
+				<input type="text" class="form-control" name="propertyName" ngModel #propertyNameRef="ngModel" required
+					minlength="3">
+			</div>
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>Property Type</label>
+				<input type="text" class="form-control" name="propertyType" ngModel #propertyTypeRef="ngModel">
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-6 form-group">
+			<label class='form-prp'>Status</label>
+			<input type="email" class="form-control" name="status" ngModel #statusRef="ngModel">
+		</div>
+	    </div>
+		<div class="row">
+			<div class="col-sm-6 form-group">
+			<label class='form-prp'>Rent Per Month</label>
+			<input type="text" class="form-control" name="rentPerMonth" ngModel #rentPerMonthRef="ngModel">
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>Street Name</label>
+				<input type="text" class="form-control" name="streetName" ngModel #streetNameRef="ngModel">
+			</div>
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>City</label>
+				<input type="text" class="form-control" name="city" ngModel #cityRef="ngModel">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>State</label>
+				<input type="text" class="form-control" name="state" ngModel #stateRef="ngModel">
+			</div>
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>Zip Code</label>
+				<input type="text" class="form-control" name="zipCode" ngModel #zipCodeRef="ngModel">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>Description</label>
+				<input type="text" class="form-control" name="description" ngModel #descriptionRef="ngModel">
+			</div>
+			<div class="col-sm-6 form-group">
+				<label class='form-prp'>Maintenance History</label>
+				<input type="text" class="form-control" name="maintenanceHistory" ngModel #maintenanceHistoryRef="ngModel">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class='form-prp'>Places Nearby</label>
+			<select class="form-control" name="placesNearby" ngModel="" #placesNearbyRef="ngModel">
+				<option value="IN">India</option>
+				<option value="US">United States of America</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label class="check-label">
+				<input type="checkbox" name="agreement" value="" ngModel #agreementRef="ngModel"><i class="blue"></i>
+				I agree to the Terms of Service
+			</label>
+		</div>
+		<button type="submit" class="btn btn-secondary" [disabled]="formRef.invalid" >Submit</button>
+	</form>
+	<div class='form-bfimg'>
+		<img class='form-fimg' src="../../../assets/images/Rectangle 103.png" alt="Card image cap" />
+	</div>
+</div>
+
+<!-- my cards code  -->
+
+<!-- <mat-card class="example-card">
+	<mat-card-header>
+	  <div mat-card-avatar class="example-header-image"></div>
+	  <mat-card-title>Shiba Inu</mat-card-title>
+	  <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+	</mat-card-header>
+	<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+	<mat-card-content>
+	  <p>
+		The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+		A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+		bred for hunting.
+	  </p>
+	</mat-card-content>
+	<mat-card-actions>
+	  <button mat-button>LIKE</button>
+	  <button mat-button>SHARE</button>
+	</mat-card-actions>
+  </mat-card> -->
+  
+<!-- my cards code -->

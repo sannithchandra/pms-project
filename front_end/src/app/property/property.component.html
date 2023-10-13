@@ -1,0 +1,204 @@
+<!-- drop down butn -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="open-drop">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Status</option>
+          <option value="1">Occupied</option>
+          <option value="2">Available</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="open-drop">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Property Type</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="open-btn">
+        <button class="btn btn-primary add-property" (onclick)="showForm()" routerLink="/add-property">
+          button
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row prop">
+    <div class="col-3 mt-5">
+      <div class="card" (click)="openDialog()">
+        <button type="submit">
+          <img class="card-img-top" src="../../assets/images/prop-1.png" alt="Card image cap" />
+        </button>
+        <div class="card-body" >
+          <p class="card-title cardsdetails">Property Name</p>
+
+          <p class="cardsdetails">Address:</p>
+
+          <p class="carddetails2">
+           {{streetName}}
+          </p>
+
+          <p class="cardsdetails">Current Status:</p>
+
+          <p class="clrsts">Occupied</p>
+
+          <p class="cardsdetails">Rent:</p>
+
+          <p class="carddetails2">$1200/month</p>
+
+          <p class="cardsdetails">Lease End Date:</p>
+
+          <p class="carddetails2">May 12, 2019</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-5">
+      <div class="card">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/images/prop-2.png" alt="Card image cap" />
+          <div class="card-body">
+           
+            <p class="card-title cardsdetails">Property Name</p>
+
+            <p class="cardsdetails">Address:</p>
+
+            <p class="cardsdetails2">
+              4517 Washington Ave. Manchester, Kentucky 39495
+            </p>
+
+            <p class="cardsdetails">Current Status:</p>
+
+            <p class="clrsts">Available</p>
+
+            <p class="cardsdetails">Rent:</p>
+
+            <p class="cardsdetails2">$1200/month</p>
+
+            <p class="cardsdetails">Lease End Date:</p>
+
+            <p class="cardsdetails2">May 12, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-5">
+      <div class="card">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/images/prop-3.png" alt="Card image cap" />
+          <div class="card-body">
+           
+            <p class="card-title cardsdetails">Property Name</p>
+
+            <p class="cardsdetails">Address:</p>
+
+            <p class="cardsdetails2">
+              4517 Washington Ave. Manchester, Kentucky 39495
+            </p>
+
+            <p class="cardsdetails">Current Status:</p>
+
+            <p class="clrsts">Occupied</p>
+
+            <p class="cardsdetails">Rent:</p>
+
+            <p class="cardsdetails2">$1200/month</p>
+
+            <p class="cardsdetails">Lease End Date:</p>
+
+            <p class="cardsdetails2">May 12, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-5">
+      <div class="card">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/images/prop-4.png" alt="Card image cap" />
+          <div class="card-body">
+            
+            <p class="card-title cardsdetails">Property Name</p>
+
+            <p class="cardsdetails">Address:</p>
+
+            <p class="cardsdetails2">
+              4517 Washington Ave. Manchester, Kentucky 39495
+            </p>
+
+            <p class="cardsdetails">Current Status:</p>
+
+            <p class="clrsts">Occupied</p>
+
+            <p class="cardsdetails">Rent:</p>
+
+            <p class="cardsdetails2">$1200/month</p>
+
+            <p class="cardsdetails">Lease End Date:</p>
+
+            <p class="cardsdetails2">May 12, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-5">
+      <div class="card">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/images/prop-5.png" alt="Card image cap" />
+          <div class="card-body">
+           
+            <p class="card-title cardsdetails">Property Name</p>
+
+            <p class="cardsdetails">Address:</p>
+
+            <p class="cardsdetails2">
+              4517 Washington Ave. Manchester, Kentucky 39495
+            </p>
+
+            <p class="cardsdetails">Current Status:</p>
+
+            <p class="clrsts">Occupied</p>
+
+            <p class="cardsdetails">Rent:</p>
+
+            <p class="cardsdetails2">$1200/month</p>
+
+            <p class="cardsdetails">Lease End Date:</p>
+
+            <p class="cardsdetails2">May 12, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container-fluid cards">
+    <mat-card class="book-card" *ngFor="let book of gridData">
+        <!-- <mat-card-header class="header">
+          <mat-card-title>{{book.propertyName}}</mat-card-title>
+        </mat-card-header> -->
+        <img mat-card-image src="./../../assets/images/Rectangle 103.png" alt="Photo of a Shiba Inu">
+        <mat-card-content class="content">
+          <p class="pt-2">
+            <b>Address </b>: {{book.streetName}} , {{book.city}} , {{book.state}} </p>
+            
+          <p class="pt-2"><b>Current Status </b>: <br>{{book.status}}</p>
+          <p class="pt-2"><b>Rent</b>: <br>{{book.rentPerMonth}}</p>
+          <p class="pt-2"><b>Lease end date</b>: <br>{{book.rentPerMonth}}</p>
+          <button class="btn btn-primary" (click)="deletePropertyDetails(book.id)">Delete</button>
+          <!-- <p class="pt-2"><b>Lease end date</b>: <br>{{book.leaseEndDate}}</p> -->
+
+
+          <!-- <p>Price:{{book.price.value + '' + book.price.currency}}</p> -->
+        </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-button>DETAILS</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+      </mat-card>
+</div>
+

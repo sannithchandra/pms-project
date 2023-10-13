@@ -1,0 +1,109 @@
+.font-color {
+    color: white;
+}
+
+.back {
+    width: 100%;
+    background-color: #212121;
+    ;
+}
+
+.abc {
+    margin-left: 40px;
+    position: relative;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: space-between;
+    /* color: #fff; */
+    font-size: larger;
+}
+
+.setnav {
+
+
+
+
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: Campton;
+    color: white;
+    line-height: 134.906%;
+    color: #FFF;
+}
+
+
+.btext {
+
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 64px;
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134.906%;
+    position: absolute;
+    left: 50px;
+    top: 115px;
+
+}
+
+#stext {
+    color: #D8D8D8;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 24px;
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.906%;
+}
+
+.prop {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dashboard{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.propertymanagement {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.financial {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.maintenance {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.tenants {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400
+}
+// .img-ico{
+   
+// }
+// .text-center{
+//     display: flex;
+//     position: relative;
+//     left: 1269px;
+// }
+
+// .parent div{
+ 
+//     justify-content: space-between;
+//     background-color: black;
+// }

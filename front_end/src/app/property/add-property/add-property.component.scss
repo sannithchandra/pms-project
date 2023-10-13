@@ -1,0 +1,44 @@
+.form-group{
+    width: 500px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+}
+.form-prp{
+    color: #5A5A5A;
+    font-family: Campton;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134.906%;
+}
+.form-fimg{
+    width: 738.712px;
+    height: 417.352px;
+    margin-top: 75px;
+    margin-left: 86px;
+}
+.form-bfimg{
+    width: 914px;
+    height: 657px;
+    flex-shrink: 0;
+    border-radius: 10.434px;
+    border: 1.043px solid #7A7A7A;
+    background: #FFF;
+}
+.box-body{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// my cards csss
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+// my cards csss

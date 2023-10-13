@@ -1,0 +1,68 @@
+table {
+  width: 100%;
+}
+
+.payment {
+  //   float: left;
+  margin-left: 0%;
+  color: #787878;
+  font-family: Campton;
+  font-size: 35px;
+  font-style: normal;
+}
+
+.total {
+  //   float: right;
+  margin-left: 50%;
+  color: #787878;
+  font-family: Campton;
+  font-size: 35px;
+  font-style: normal;
+}
+
+.financialword {
+  color: #000;
+  font-family: Campton;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.total-no {
+  font-weight: 900;
+  font-size: 50px;
+  //   float: right;
+  margin-left: 50%;
+  color: #787878;
+  font-family: Campton;
+  font-style: normal;
+}
+
+.payment-no {
+  float: left;
+  color: #787878;
+  font-weight: 900;
+  font-family: Campton;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.transactionwrd {
+  float: left;
+  margin-top: 3%;
+
+  color: #000;
+  font-family: Campton;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.daterg {
+  float: right;
+  margin-top: 3%;
+  color: #000;
+  font-family: Campton;
+  font-size: 24px;
+  font-weight: 500;
+}
